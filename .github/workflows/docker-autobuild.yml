@@ -10,4 +10,4 @@ jobs:
     - name: curl
       uses: wei/curl@v1.1.1
       with:
-        args: -X POST 'https://hub.docker.com/api/build/v1/source/fd350084-414d-4dcf-9bb8-258fe09f2d06/trigger/${{ $secrets.DOCKER_TIRGGER }}/call/'
+        args: -X POST 'https://hub.docker.com/api/build/v1/source/fd350084-414d-4dcf-9bb8-258fe09f2d06/trigger/${{ secrets.DOCKER_TIRGGER }}/call/'
